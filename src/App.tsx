@@ -25,22 +25,6 @@ function App() {
           </li>
           <li>
             <a
-              href="https://www.codewars.com/kata/511f0fe64ae8683297000001"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Basic Training: Add item to an Array
-            </a>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
-              target="_blank"
-              rel="noreferrer"
-            >
-              - HINT
-            </a>
-          </li>
-          <li>
-            <a
               href="https://www.codewars.com/kata/523b4ff7adca849afe000035"
               target="_blank"
               rel="noreferrer"
@@ -154,6 +138,22 @@ function App() {
               rel="noreferrer"
             >
               Area or Perimeter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.codewars.com/kata/511f0fe64ae8683297000001"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Basic Training: Add item to an Array
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
+              target="_blank"
+              rel="noreferrer"
+            >
+              - HINT
             </a>
           </li>
           <li>
