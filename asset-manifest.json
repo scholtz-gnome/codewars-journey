@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/codewars-journey/static/css/main.f09a1402.chunk.css",
-    "main.js": "/codewars-journey/static/js/main.38a32471.chunk.js",
-    "main.js.map": "/codewars-journey/static/js/main.38a32471.chunk.js.map",
+    "main.css": "/codewars-journey/static/css/main.7caa525e.chunk.css",
+    "main.js": "/codewars-journey/static/js/main.41bc9cdf.chunk.js",
+    "main.js.map": "/codewars-journey/static/js/main.41bc9cdf.chunk.js.map",
     "runtime-main.js": "/codewars-journey/static/js/runtime-main.20229933.js",
     "runtime-main.js.map": "/codewars-journey/static/js/runtime-main.20229933.js.map",
-    "static/js/2.90f77d5d.chunk.js": "/codewars-journey/static/js/2.90f77d5d.chunk.js",
-    "static/js/2.90f77d5d.chunk.js.map": "/codewars-journey/static/js/2.90f77d5d.chunk.js.map",
+    "static/js/2.61475c70.chunk.js": "/codewars-journey/static/js/2.61475c70.chunk.js",
+    "static/js/2.61475c70.chunk.js.map": "/codewars-journey/static/js/2.61475c70.chunk.js.map",
     "index.html": "/codewars-journey/index.html",
-    "static/css/main.f09a1402.chunk.css.map": "/codewars-journey/static/css/main.f09a1402.chunk.css.map",
-    "static/js/2.90f77d5d.chunk.js.LICENSE.txt": "/codewars-journey/static/js/2.90f77d5d.chunk.js.LICENSE.txt"
+    "static/css/main.7caa525e.chunk.css.map": "/codewars-journey/static/css/main.7caa525e.chunk.css.map",
+    "static/js/2.61475c70.chunk.js.LICENSE.txt": "/codewars-journey/static/js/2.61475c70.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.20229933.js",
-    "static/js/2.90f77d5d.chunk.js",
-    "static/css/main.f09a1402.chunk.css",
-    "static/js/main.38a32471.chunk.js"
+    "static/js/2.61475c70.chunk.js",
+    "static/css/main.7caa525e.chunk.css",
+    "static/js/main.41bc9cdf.chunk.js"
   ]
 }

@@ -1,2 +1,0 @@
-(this["webpackJsonpcodewars-journey"]=this["webpackJsonpcodewars-journey"]||[]).push([[0],{10:function(e,n,c){},11:function(e,n,c){"use strict";c.r(n);var r=c(1),t=c.n(r),o=c(3),s=c.n(o),a=(c(8),c(0));var d=function(){return Object(a.jsx)("div",{className:"App",children:Object(a.jsx)("header",{children:"Welcome to Codewars Journey"})})};c(10);s.a.render(Object(a.jsx)(t.a.StrictMode,{children:Object(a.jsx)(d,{})}),document.getElementById("root"))},8:function(e,n,c){}},[[11,1,2]]]);
-//# sourceMappingURL=main.38a32471.chunk.js.map
