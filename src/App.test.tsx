@@ -4,7 +4,6 @@ import App from "./App";
 
 test("renders learn react link", () => {
   const itRendered = render(<App />);
-  console.log(itRendered);
 
   expect(itRendered).toBeDefined();
 });
