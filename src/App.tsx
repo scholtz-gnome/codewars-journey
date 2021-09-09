@@ -34,20 +34,29 @@ function App() {
           </li>
           <li>
             <a
-              href="https://www.codewars.com/kata/523b623152af8a30c6000027"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Function 2 - Squaring An Argument
-            </a>
-          </li>
-          <li>
-            <a
               href="https://www.codewars.com/kata/50ee6b0bdeab583673000025"
               target="_blank"
               rel="noreferrer"
             >
               Basic Variable Assignment
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.codewars.com/kata/5612e743cab69fec6d000077"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Grasshopper - Variable Assignment Debug
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.codewars.com/kata/523b623152af8a30c6000027"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Function 2 - Squaring An Argument
             </a>
           </li>
           <li>
@@ -84,15 +93,6 @@ function App() {
               rel="noreferrer"
             >
               Returning Strings
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.codewars.com/kata/5612e743cab69fec6d000077"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Grasshopper - Variable Assignment Debug
             </a>
           </li>
           <li>
