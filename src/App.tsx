@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Challenge from "./components/challenge";
 
 function App() {
   return (
@@ -7,49 +8,23 @@ function App() {
       <header>Welcome to Codewars Journey</header>
       <div>
         <ol>
-          <li>
-            <a
-              href="https://www.codewars.com/kata/50654ddff44f800200000004"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Multiply
-            </a>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return"
-              target="_blank"
-              rel="noreferrer"
-            >
-              - HINT
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.codewars.com/kata/523b4ff7adca849afe000035"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Function 1 - Hello World
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.codewars.com/kata/50ee6b0bdeab583673000025"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Basic Variable Assignment
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.codewars.com/kata/5612e743cab69fec6d000077"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Grasshopper - Variable Assignment Debug
-            </a>
-          </li>
+          <Challenge
+            challengeName="Multiply"
+            challengeUrl="https://www.codewars.com/kata/50654ddff44f800200000004"
+          />
+          <Challenge
+            challengeName="Function 1 - Hello World"
+            challengeUrl="https://www.codewars.com/kata/523b4ff7adca849afe000035"
+          />
+          <Challenge
+            challengeName="Basic Variable Assignment"
+            challengeUrl="https://www.codewars.com/kata/50ee6b0bdeab583673000025"
+          />
+          <Challenge
+            challengeName="Grasshopper - Variable Assignment Debug"
+            challengeUrl="https://www.codewars.com/kata/5612e743cab69fec6d000077"
+          />
+
           <li>
             <a
               href="https://www.codewars.com/kata/523b623152af8a30c6000027"
