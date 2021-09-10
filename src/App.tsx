@@ -41,6 +41,7 @@ function App() {
   ): Promise<void> => {
     const config: AxiosRequestConfig = {
       params,
+      withCredentials: true,
     };
     const res = await axios.get(
       "https://codewars-journey-api.herokuapp.com/challenges",
@@ -65,7 +66,8 @@ function App() {
 
     await axios.post(
       "https://codewars-journey-api.herokuapp.com/challenges",
-      createChallengeDto
+      createChallengeDto,
+      { withCredentials: true }
     );
     await getChallenges(setChallenges, { levels, kyus });
 
