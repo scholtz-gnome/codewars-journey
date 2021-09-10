@@ -6,3 +6,15 @@
   border: 1px solid #efefef;
   box-shadow: 1px 3px 4px #efefef;
 }
+
+.beginner {
+  border: 2px solid #11cc33;
+}
+
+.intermediate {
+  border: 2px solid #eeee00;
+}
+
+.advanced {
+  border: 2px solid crimson;
+}

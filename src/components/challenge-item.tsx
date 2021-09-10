@@ -8,7 +8,7 @@ const ChallengeItem: React.FC<ChallengeItemProps> = ({
   level,
 }) => {
   return (
-    <div className="challenge-item">
+    <div className={`challenge-item ${level}`}>
       <p>
         Name:
         <a href={challengeUrl} target="_blank" rel="noreferrer">
