@@ -1,0 +1,8 @@
+.challenge-item {
+  padding: 10px;
+  margin: 5px;
+  width: 220px;
+  border-radius: 3px;
+  border: 1px solid #efefef;
+  box-shadow: 1px 3px 4px #efefef;
+}
