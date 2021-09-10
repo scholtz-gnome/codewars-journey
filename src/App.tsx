@@ -271,6 +271,7 @@ function App() {
         </form>
       </div>
 
+      {challenges && <div>{challenges.length} results</div>}
       <div className="challenge-container">
         {challenges &&
           challenges.map((challenge, i) => (
