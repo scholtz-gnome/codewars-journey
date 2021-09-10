@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/codewars-journey/static/css/main.3778e1f2.chunk.css",
-    "main.js": "/codewars-journey/static/js/main.99211c21.chunk.js",
-    "main.js.map": "/codewars-journey/static/js/main.99211c21.chunk.js.map",
+    "main.js": "/codewars-journey/static/js/main.f6952c0e.chunk.js",
+    "main.js.map": "/codewars-journey/static/js/main.f6952c0e.chunk.js.map",
     "runtime-main.js": "/codewars-journey/static/js/runtime-main.20229933.js",
     "runtime-main.js.map": "/codewars-journey/static/js/runtime-main.20229933.js.map",
     "static/js/2.0dd9a3e0.chunk.js": "/codewars-journey/static/js/2.0dd9a3e0.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.20229933.js",
     "static/js/2.0dd9a3e0.chunk.js",
     "static/css/main.3778e1f2.chunk.css",
-    "static/js/main.99211c21.chunk.js"
+    "static/js/main.f6952c0e.chunk.js"
   ]
 }
