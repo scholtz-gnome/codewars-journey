@@ -1,9 +1,9 @@
-import axios, { AxiosRequestConfig } from "axios";
-import React, { BaseSyntheticEvent, useEffect, useState } from "react";
+import axios from "axios";
+import React, { BaseSyntheticEvent, useEffect, useMemo, useState } from "react";
 import "./App.css";
 import ChallengeItem from "./components/challenge-item";
-import { CreateChallengeDto } from "./dtos/create-challenge.dto";
 import { Challenge } from "./interfaces/challenge.interface";
+import { ChallengesService } from "./services/chellenges.service";
 import { Kyu } from "./types/kyu.enum";
 import { Level } from "./types/level.enum";
 
@@ -12,51 +12,7 @@ function App() {
   const [kyus, setKyus] = useState<Kyu[]>([]);
   const [levels, setLevels] = useState<Level[]>([]);
 
-  const getChallenges = async (
-    setChallenges: React.Dispatch<
-      React.SetStateAction<Challenge[] | undefined>
-    >,
-    params: { kyus: Kyu[]; levels: Level[] }
-  ): Promise<void> => {
-    const config: AxiosRequestConfig = {
-      params,
-      withCredentials: true,
-    };
-    const res = await axios.get(
-      "https://codewars-journey-api.herokuapp.com/challenges",
-      config
-    );
-
-    setChallenges(res.data.challenges);
-  };
-
-  const createChallenge = async (e: BaseSyntheticEvent) => {
-    e.preventDefault();
-    const name = e.target.name.value.trim();
-    const url = e.target.url.value.trim();
-    const kyu = e.target.kyu.value.trim();
-    const level = e.target.level.value.trim();
-    const createChallengeDto: CreateChallengeDto = {
-      name,
-      url,
-      kyu,
-      level,
-    };
-
-    await axios.post(
-      "https://codewars-journey-api.herokuapp.com/challenges",
-      createChallengeDto,
-      { withCredentials: true }
-    );
-    await getChallenges(setChallenges, { levels, kyus });
-
-    const inputs = document.querySelectorAll("input");
-    inputs.forEach((input) => {
-      if (input.name === "url" || input.name === "name") {
-        input.value = "";
-      }
-    });
-  };
+  const challengesService = useMemo(() => new ChallengesService(axios), []);
 
   const onKyuChange = async (e: BaseSyntheticEvent): Promise<void> => {
     const checked: boolean = e.target.checked;
@@ -64,12 +20,15 @@ function App() {
     if (checked) {
       const newKyus: Kyu[] = [...kyus, e.target.value];
       setKyus(newKyus);
-      await getChallenges(setChallenges, { levels, kyus: newKyus });
+      await challengesService.getChallenges(setChallenges, {
+        levels,
+        kyus: newKyus,
+      });
     } else if (!checked) {
       const indexToRemove = kyus.indexOf(e.target.value);
       kyus.splice(indexToRemove, 1);
       setKyus(kyus);
-      await getChallenges(setChallenges, { levels, kyus });
+      await challengesService.getChallenges(setChallenges, { levels, kyus });
     }
   };
 
@@ -79,18 +38,21 @@ function App() {
     if (checked) {
       const newLevels: Level[] = [...levels, e.target.value];
       setLevels(newLevels);
-      await getChallenges(setChallenges, { levels: newLevels, kyus });
+      await challengesService.getChallenges(setChallenges, {
+        levels: newLevels,
+        kyus,
+      });
     } else if (!checked) {
       const indexToRemove = levels.indexOf(e.target.value);
       levels.splice(indexToRemove, 1);
       setLevels(levels);
-      await getChallenges(setChallenges, { levels, kyus });
+      await challengesService.getChallenges(setChallenges, { levels, kyus });
     }
   };
 
   useEffect(() => {
-    getChallenges(setChallenges, { levels, kyus });
-  }, [kyus, levels]);
+    challengesService.getChallenges(setChallenges, { levels, kyus });
+  }, [kyus, levels, challengesService]);
 
   return (
     <div className="App">
@@ -209,7 +171,14 @@ function App() {
       </div>
 
       <div>
-        <form onSubmit={(e: BaseSyntheticEvent) => createChallenge(e)}>
+        <form
+          onSubmit={(e: BaseSyntheticEvent) =>
+            challengesService.createChallenge(e, setChallenges, {
+              levels,
+              kyus,
+            })
+          }
+        >
           <div>
             <p>Create a challenge</p>
             <p>The URL is a link to a Codewars challenge</p>
