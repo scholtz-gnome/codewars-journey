@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { BaseSyntheticEvent, useEffect, useMemo, useState } from "react";
 import "./App.css";
-import ChallengeItem from "./components/challenge-item";
+import ChallengeItem from "./components/challenge-item/challenge-item";
+import Nav from "./components/nav/nav";
 import { Challenge } from "./interfaces/challenge.interface";
 import { ChallengesService } from "./services/chellenges.service";
 import { Kyu } from "./types/kyu.enum";
@@ -56,119 +57,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>Welcome to Codewars Journey</header>
-
-      <div>
-        <p>Filter challenges by kyu</p>
-        <div>
-          <label htmlFor="1-kyu">1-kyu</label>
-          <input
-            name="1-kyu"
-            type="checkbox"
-            value="1-kyu"
-            onClick={(e: BaseSyntheticEvent) => onKyuChange(e)}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="2-kyu">2-kyu</label>
-          <input
-            name="2-kyu"
-            type="checkbox"
-            value="2-kyu"
-            onClick={(e: BaseSyntheticEvent) => onKyuChange(e)}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="kyu">3-kyu</label>
-          <input
-            name="3-kyu"
-            type="checkbox"
-            value="3-kyu"
-            onClick={(e: BaseSyntheticEvent) => onKyuChange(e)}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="kyu">4-kyu</label>
-          <input
-            name="4-kyu"
-            type="checkbox"
-            value="4-kyu"
-            onClick={(e: BaseSyntheticEvent) => onKyuChange(e)}
-          />
-        </div>
-
-        <label htmlFor="kyu">5-kyu</label>
-        <input
-          name="5-kyu"
-          type="checkbox"
-          value="5-kyu"
-          onClick={(e: BaseSyntheticEvent) => onKyuChange(e)}
-        />
-
-        <div>
-          <label htmlFor="kyu">6-kyu</label>
-          <input
-            name="6-kyu"
-            type="checkbox"
-            value="6-kyu"
-            onClick={(e: BaseSyntheticEvent) => onKyuChange(e)}
-          />
-        </div>
-
-        <label htmlFor="kyu">7-kyu</label>
-        <input
-          name="6-kyu"
-          type="checkbox"
-          value="7-kyu"
-          onClick={(e: BaseSyntheticEvent) => onKyuChange(e)}
-        />
-
-        <div>
-          <label htmlFor="kyu">8-kyu</label>
-          <input
-            name="8-kyu"
-            type="checkbox"
-            value="8-kyu"
-            onClick={(e: BaseSyntheticEvent) => onKyuChange(e)}
-          />
-        </div>
-      </div>
-
-      <div>
-        <p>Filter challenges by level</p>
-        <div>
-          <label htmlFor="beginner">beginner</label>
-          <input
-            name="beginner"
-            type="checkbox"
-            value="beginner"
-            onClick={(e: BaseSyntheticEvent) => onLevelChange(e)}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="intermediate">intermediate</label>
-          <input
-            name="intermediate"
-            type="checkbox"
-            value="intermediate"
-            onClick={(e: BaseSyntheticEvent) => onLevelChange(e)}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="advanced">advanced</label>
-          <input
-            name="advanced"
-            type="checkbox"
-            value="advanced"
-            onClick={(e: BaseSyntheticEvent) => onLevelChange(e)}
-          />
-        </div>
-      </div>
+      <Nav onKyuChange={onKyuChange} onLevelChange={onLevelChange} />
 
       <div>
         <form

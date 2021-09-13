@@ -1,5 +1,5 @@
 import "./challenge-item.css";
-import { ChallengeItemProps } from "./challenge-item.interface";
+import { ChallengeItemProps } from "./interfaces/challenge-item.interface";
 
 const ChallengeItem: React.FC<ChallengeItemProps> = ({
   challengeUrl,

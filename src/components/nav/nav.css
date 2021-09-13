@@ -1,0 +1,38 @@
+.nav {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kyus {
+  display: flex;
+}
+
+.kyus > div {
+  position: relative;
+}
+
+.kyus > div > label {
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  z-index: -1;
+}
+
+.kyus > div > input {
+  appearance: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 64px;
+  height: 32px;
+  z-index: 5;
+}
+
+.kyus > div > input:checked {
+  box-shadow: inset 2px 2px 6px #eee;
+}
+
+.levels {
+  display: flex;
+}
