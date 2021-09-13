@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/codewars-journey/static/css/main.3778e1f2.chunk.css",
-    "main.js": "/codewars-journey/static/js/main.f6952c0e.chunk.js",
-    "main.js.map": "/codewars-journey/static/js/main.f6952c0e.chunk.js.map",
+    "main.css": "/codewars-journey/static/css/main.73276f9e.chunk.css",
+    "main.js": "/codewars-journey/static/js/main.bd3760b5.chunk.js",
+    "main.js.map": "/codewars-journey/static/js/main.bd3760b5.chunk.js.map",
     "runtime-main.js": "/codewars-journey/static/js/runtime-main.20229933.js",
     "runtime-main.js.map": "/codewars-journey/static/js/runtime-main.20229933.js.map",
-    "static/js/2.0dd9a3e0.chunk.js": "/codewars-journey/static/js/2.0dd9a3e0.chunk.js",
-    "static/js/2.0dd9a3e0.chunk.js.map": "/codewars-journey/static/js/2.0dd9a3e0.chunk.js.map",
+    "static/js/2.e32d0591.chunk.js": "/codewars-journey/static/js/2.e32d0591.chunk.js",
+    "static/js/2.e32d0591.chunk.js.map": "/codewars-journey/static/js/2.e32d0591.chunk.js.map",
     "index.html": "/codewars-journey/index.html",
-    "static/css/main.3778e1f2.chunk.css.map": "/codewars-journey/static/css/main.3778e1f2.chunk.css.map",
-    "static/js/2.0dd9a3e0.chunk.js.LICENSE.txt": "/codewars-journey/static/js/2.0dd9a3e0.chunk.js.LICENSE.txt"
+    "static/css/main.73276f9e.chunk.css.map": "/codewars-journey/static/css/main.73276f9e.chunk.css.map",
+    "static/js/2.e32d0591.chunk.js.LICENSE.txt": "/codewars-journey/static/js/2.e32d0591.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.20229933.js",
-    "static/js/2.0dd9a3e0.chunk.js",
-    "static/css/main.3778e1f2.chunk.css",
-    "static/js/main.f6952c0e.chunk.js"
+    "static/js/2.e32d0591.chunk.js",
+    "static/css/main.73276f9e.chunk.css",
+    "static/js/main.bd3760b5.chunk.js"
   ]
 }
