@@ -2,31 +2,10 @@ import axios, { AxiosRequestConfig } from "axios";
 import React, { BaseSyntheticEvent, useEffect, useState } from "react";
 import "./App.css";
 import ChallengeItem from "./components/challenge-item";
+import { CreateChallengeDto } from "./dtos/create-challenge.dto";
 import { Challenge } from "./interfaces/challenge.interface";
-
-export enum Kyu {
-  ONE = "1-kyu",
-  TWO = "2-kyu",
-  THREE = "3-kyu",
-  FOUR = "4-kyu",
-  FIVE = "5-kyu",
-  SIX = "6-kyu",
-  SEVEN = "7-kyu",
-  EIGHT = "8-kyu",
-}
-
-export enum Level {
-  BEGINNER = "beginner",
-  INTERMEDIATE = "intermediate",
-  ADVANCED = "advanced",
-}
-
-interface CreateChallengeDto {
-  name: string;
-  url: string;
-  kyu: Kyu;
-  level: Level;
-}
+import { Kyu } from "./types/kyu.enum";
+import { Level } from "./types/level.enum";
 
 function App() {
   const [challenges, setChallenges] = useState<Challenge[]>();
@@ -116,6 +95,7 @@ function App() {
   return (
     <div className="App">
       <header>Welcome to Codewars Journey</header>
+
       <div>
         <p>Filter challenges by kyu</p>
         <div>
@@ -271,7 +251,8 @@ function App() {
         </form>
       </div>
 
-      {challenges && <div>{challenges.length} results</div>}
+      <div>{challenges?.length} results</div>
+
       <div className="challenge-container">
         {challenges &&
           challenges.map((challenge, i) => (
